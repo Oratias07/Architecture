@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>CV generator</title>
+        <link rel="stylesheet" href="cvGenerator.css">
+    </head>
+    <body>
+
+        <h1>CV Generator</h1>
+        <h2 id="h2Id">Please fill the following form</h2><br>
+
+
+        
+        <table>
+            <tr>
+                <td>First name: <input type="text" id="fname" value=""></td>
+                <td>Last name: <input type="text" id="lname" value=""></td>
+            </tr>
+
+            <tr>
+                <td><textarea id="txt1" rows="8" cols="35">insert your message</textarea></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Education:</td>
+                <td>
+                    <input type="checkbox" id="1" name="degree" value="B.Sc">B.Sc
+                    <input type="checkbox" id="2" name="degree" value="B.A">B.A
+                    <input type="checkbox" id="3" name="degree" value="M.Sc">M.Sc
+                    <input type="checkbox" id="4" name="degree" value="Ph.D">Ph.D
+                </td>
+            </tr>
+
+            <tr>
+                <td>Experience</td>
+                <td>
+                    <input type="radio" id="03" name="ages" value="0-3">0-3 years<br>
+                    <input type="radio" id="47" name="ages" value="4-7">4-7 years<br>
+                    <input type="radio" id="7plus" name="ages" value="7+">more then 7 years
+                </td>
+            </tr>
+
+            <tr>
+                <td>What is your favorite programming language?</td>
+                <td>
+                    <select id="cars" name="cars">
+                    <option value="C++">cpp</option>
+                    <option value="C">C</option>
+                    <option value="C#/JavaScript">C#/JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="HTML">HTML</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="send" value="send">
+                </td>
+            </tr>
+
+
+        </table>
+
+
+    </body>
+</html>
