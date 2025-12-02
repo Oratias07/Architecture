@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>CV generator</title>
+        <link rel="stylesheet" href="01.css">
+        <script src="studentInfo.jc"></script>
+        <script src="printSaveStudentInfo.js"></script>
+    </head>
+    <body>
+
+        <h1>CV Generator</h1>
+        <h2 id="h2Id">Please fill the following form</h2><br>
+
+
+        
+        <table>
+            <tr>
+                <td>
+                    Id: <input type="text" id="id" value="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>First name: <input type="text" id="fname" value=""></td>
+                <td>Last name: <input type="text" id="lname" value=""></td>
+            </tr>
+
+            <tr>
+                <td>Address: <input type="text" id="address" value=""></td>
+            </tr>
+
+            <tr>
+                <td>What is your favorite programming language?</td>
+                <td>
+                    <select id="cars" name="cars">
+                    <option value="C++">cpp</option>
+                    <option value="C">C</option>
+                    <option value="C#/JavaScript">CSS & JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="HTML">HTML</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>How do you evaluate your knowlage in it?</td>
+                <td>
+                    <input type="radio" id="low" name="evaluate" value="l">low
+                    <input type="radio" id="medium" name="evaluate" value="m">medium
+                    <input type="radio" id="high" name="evaluate" value="h">high
+                </td>
+            </tr>
+            
+
+            <tr>
+                <td>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="send">send</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="clearForm">clearForm</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="getAllStudents">getAllStudents</button>
+                    <!-- <input type="getAllStudents" value="getAllStudents"> -->
+                </td>
+            </tr>
+            <tr>
+                <td>Id to remove: <input type="text" id="IDTR" value="">
+                    <button type="idtoremove">remove</button>
+                </td>
+            </tr>
+            
+
+        </table>
+
+
+    </body>
+</html>
