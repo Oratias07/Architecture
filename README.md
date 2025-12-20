@@ -14,7 +14,7 @@ A sleek, modern architectural showcase website designed to highlight professiona
 ![Hero Section](Askarov\screenshots\preview2.png)
 ![Hero Section](Askarov\screenshots\preview3.png)
 ![Hero Section](Askarov\screenshots\preview4.png)
-![Hero Section](Askarov\vscreenshots\preview5.png)
+![Hero Section](Askarov\screenshots\preview5.png)
 
 ### OPM-Diagram
 ![Gallery Section](Askarov\screenshots\OPM-Diagram.png)
