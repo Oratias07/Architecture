@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPM Diagram - Ziv Askarov Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .diagram-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .object {
+            fill: white;
+            stroke: #2196F3;
+            stroke-width: 2;
+        }
+        
+        .process {
+            fill: white;
+            stroke: #4CAF50;
+            stroke-width: 2;
+        }
+        
+        .state {
+            fill: #E3F2FD;
+            stroke: #2196F3;
+            stroke-width: 1.5;
+            stroke-dasharray: 5,5;
+        }
+        
+        .link {
+            stroke: #333;
+            stroke-width: 1.5;
+            fill: none;
+            marker-end: url(#arrowhead);
+        }
+        
+        .link-instrument {
+            stroke: #666;
+            stroke-width: 1.5;
+            fill: none;
+            stroke-dasharray: 3,3;
+        }
+        
+        .text {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            fill: #333;
+            text-anchor: middle;
+        }
+        
+        .text-small {
+            font-size: 11px;
+            fill: #666;
+        }
+        
+        .legend {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .legend h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .legend-box {
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            border: 2px solid;
+            vertical-align: middle;
+            margin-left: 8px;
+            background: white;
+        }
+        
+        .legend-ellipse {
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+            border: 2px solid;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-left: 8px;
+            background: white;
+        }
+        
+        .opl {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff9c4;
+            border-radius: 8px;
+            border-right: 4px solid #fbc02d;
+        }
+        
+        .opl h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        
+        .opl-text {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            color: #333;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="diagram-container">
+        <h1>דיאגרמת OPM - אתר זיו אסקרוב</h1>
+        <p class="subtitle">Object-Process Methodology Diagram - Layer 1 (SD)</p>
+        
+        <svg width="1300" height="800" viewBox="0 0 1300 800">
+            <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <polygon points="0 0, 10 3, 0 6" fill="#333" />
+                </marker>
+            </defs>
+            
+            <!-- Main System Object -->
+            <rect class="object" x="50" y="50" width="1200" height="700" rx="10"/>
+            <text class="text" x="650" y="30" font-size="16" font-weight="bold">אתר זיו אסקרוב (Ziv Askarov Website)</text>
+            
+            <!-- User Object -->
+            <rect class="object" x="100" y="100" width="120" height="80" rx="5"/>
+            <text class="text" x="160" y="145">משתמש</text>
+            <text class="text-small" x="160" y="160">(User)</text>
+            
+            <!-- Browsing Process -->
+            <ellipse class="process" cx="350" cy="140" rx="80" ry="40"/>
+            <text class="text" x="350" y="145">גלישה באתר</text>
+            <text class="text-small" x="350" y="160">(Browsing)</text>
+            
+            <!-- Content Objects -->
+            <g id="content-group">
+                <!-- Treatments -->
+                <rect class="object" x="550" y="100" width="140" height="70" rx="5"/>
+                <text class="text" x="620" y="130">שיטות טיפול</text>
+                <text class="text-small" x="620" y="145">(Treatments)</text>
+                
+                <!-- Success Stories -->
+                <rect class="object" x="730" y="100" width="140" height="70" rx="5"/>
+                <text class="text" x="800" y="130">סיפורי הצלחה</text>
+                <text class="text-small" x="800" y="145">(Success Stories)</text>
+                
+                <!-- About -->
+                <rect class="object" x="910" y="100" width="140" height="70" rx="5"/>
+                <text class="text" x="980" y="130">אודות</text>
+                <text class="text-small" x="980" y="145">(About)</text>
+                
+                <!-- Location -->
+                <rect class="object" x="1090" y="100" width="140" height="70" rx="5"/>
+                <text class="text" x="1160" y="130">מיקום</text>
+                <text class="text-small" x="1160" y="145">(Location)</text>
+            </g>
+            
+            <!-- Toggle Process -->
+            <ellipse class="process" cx="800" cy="250" rx="100" ry="45"/>
+            <text class="text" x="800" y="245">הרחבה/כיווץ</text>
+            <text class="text-small" x="800" y="260">(Toggle Expand)</text>
+            
+            <!-- States -->
+            <rect class="state" x="650" y="320" width="100" height="50" rx="5"/>
+            <text class="text" x="700" y="350">מכווץ</text>
+            
+            <rect class="state" x="850" y="320" width="100" height="50" rx="5"/>
+            <text class="text" x="900" y="350">מורחב</text>
+            
+            <!-- Contact Form -->
+            <rect class="object" x="100" y="450" width="200" height="100" rx="5"/>
+            <text class="text" x="200" y="495">טופס יצירת קשר</text>
+            <text class="text-small" x="200" y="510">(Contact Form)</text>
+            
+            <!-- Form Fields as parts -->
+            <rect class="object" x="120" y="520" width="70" height="20" rx="3"/>
+            <text class="text-small" x="155" y="533">שם</text>
+            
+            <rect class="object" x="200" y="520" width="70" height="20" rx="3"/>
+            <text class="text-small" x="235" y="533">טלפון</text>
+            
+            <!-- Validation Process -->
+            <ellipse class="process" cx="450" cy="500" rx="90" ry="45"/>
+            <text class="text" x="450" y="495">אימות נתונים</text>
+            <text class="text-small" x="450" y="510">(Validation)</text>
+            
+            <!-- Saving Process -->
+            <ellipse class="process" cx="700" cy="500" rx="90" ry="45"/>
+            <text class="text" x="700" y="495">שמירת נתונים</text>
+            <text class="text-small" x="700" y="510">(Saving Data)</text>
+            
+            <!-- LocalStorage Object -->
+            <rect class="object" x="900" y="450" width="180" height="100" rx="5"/>
+            <text class="text" x="990" y="495">LocalStorage</text>
+            <text class="text-small" x="990" y="510">(Data Repository)</text>
+            
+            <!-- Animations -->
+            <rect class="object" x="100" y="650" width="180" height="70" rx="5"/>
+            <text class="text" x="190" y="680">אנימציית פרחים</text>
+            <text class="text-small" x="190" y="695">(Flower Animation)</text>
+            
+            <!-- Running Process -->
+            <ellipse class="process" cx="450" cy="685" rx="90" ry="40"/>
+            <text class="text" x="450" y="685">הרצה רציפה</text>
+            <text class="text-small" x="450" y="700">(Running)</text>
+            
+            <!-- Navigation -->
+            <rect class="object" x="700" y="650" width="180" height="70" rx="5"/>
+            <text class="text" x="790" y="680">ניווט</text>
+            <text class="text-small" x="790" y="695">(Navigation)</text>
+            
+            <!-- Architecture Layers -->
+            <rect class="object" x="950" y="600" width="250" height="120" rx="5"/>
+            <text class="text" x="1075" y="625" font-weight="bold">ארכיטקטורה 3 שכבות</text>
+            
+            <rect class="object" x="970" y="640" width="80" height="30" rx="3"/>
+            <text class="text-small" x="1010" y="658">UI Layer</text>
+            
+            <rect class="object" x="1060" y="640" width="80" height="30" rx="3"/>
+            <text class="text-small" x="1100" y="658">Business</text>
+            
+            <rect class="object" x="1150" y="640" width="80" height="30" rx="3"/>
+            <text class="text-small" x="1190" y="658">Data</text>
+            
+            <!-- Links -->
+            <!-- User to Browsing -->
+            <path class="link" d="M 220,140 L 270,140"/>
+            <text class="text-small" x="245" y="130">agent</text>
+            
+            <!-- Browsing to Content -->
+            <path class="link" d="M 430,140 L 550,135"/>
+            <path class="link" d="M 430,140 L 730,135"/>
+            <path class="link" d="M 430,140 L 910,135"/>
+            <path class="link" d="M 430,140 L 1090,135"/>
+            <text class="text-small" x="490" y="130">result</text>
+            
+            <!-- User to Toggle -->
+            <path class="link-instrument" d="M 160,180 L 160,240 L 700,240"/>
+            <text class="text-small" x="400" y="230">instrument</text>
+            
+            <!-- Toggle to States -->
+            <path class="link" d="M 750,280 L 720,320"/>
+            <path class="link" d="M 850,280 L 880,320"/>
+            <text class="text-small" x="770" y="305">effect</text>
+            
+            <!-- User to Contact Form -->
+            <path class="link-instrument" d="M 160,180 L 160,450"/>
+            <text class="text-small" x="175" y="315">instrument</text>
+            
+            <!-- Contact Form to Validation -->
+            <path class="link" d="M 300,500 L 360,500"/>
+            <text class="text-small" x="330" y="490">input</text>
+            
+            <!-- Validation to Saving -->
+            <path class="link" d="M 540,500 L 610,500"/>
+            <text class="text-small" x="575" y="490">result</text>
+            
+            <!-- Saving to LocalStorage -->
+            <path class="link" d="M 790,500 L 900,500"/>
+            <text class="text-small" x="845" y="490">effect</text>
+            
+            <!-- Animation to Running -->
+            <path class="link" d="M 280,685 L 360,685"/>
+            <text class="text-small" x="320" y="675">object</text>
+            
+            <!-- Navigation links -->
+            <path class="link" d="M 790,650 L 790,550 L 620,180"/>
+            <text class="text-small" x="810" y="400">links to</text>
+        </svg>
+        
+        <div class="legend">
+            <h3>מקרא (Legend):</h3>
+            <div class="legend-item">
+                <span class="legend-box" style="border-color: #2196F3;"></span>
+                <span>אובייקט (Object)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-ellipse" style="border-color: #4CAF50;"></span>
+                <span>תהליך (Process)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-box" style="border-color: #2196F3; border-style: dashed;"></span>
+                <span>מצב (State)</span>
+            </div>
+            <div class="legend-item">
+                <span style="display: inline-block; width: 60px; height: 2px; background: #333; vertical-align: middle; margin-left: 8px;"></span>
+                <span>קשר מבני (Structural Link)</span>
+            </div>
+            <div class="legend-item">
+                <span style="display: inline-block; width: 60px; height: 2px; background: #666; vertical-align: middle; margin-left: 8px; border-top: 2px dashed #666;"></span>
+                <span>קשר פרוצדורלי (Procedural Link)</span>
+            </div>
+        </div>
+        
+        <div class="opl">
+            <h3>OPL (Object-Process Language) - תיאור טקסטואלי:</h3>
+            <div class="opl-text">אתר זיו אסקרוב מורכב מ:
+  - משתמש (User)
+  - שיטות טיפול (Treatments) 
+  - סיפורי הצלחה (Success Stories)
+  - אודות (About)
+  - מיקום (Location)
+  - טופס יצירת קשר (Contact Form)
+  - LocalStorage
+  - אנימציית פרחים (Flower Animation)
+  - ניווט (Navigation)
+  - ארכיטקטורה 3 שכבות
+
+משתמש מבצע גלישה באתר (Browsing).
+גלישה באתר מציגה שיטות טיפול, סיפורי הצלחה, אודות ומיקום.
+
+משתמש מפעיל הרחבה/כיווץ (Toggle Expand).
+הרחבה/כיווץ משנה את המצב בין מכווץ למורחב.
+
+משתמש ממלא טופס יצירת קשר.
+טופס יצירת קשר מורכב משם, טלפון, אימייל והודעה.
+
+טופס יצירת קשר מעביר נתונים לאימות נתונים (Validation).
+אימות נתונים מעביר נתונים תקינים לשמירת נתונים (Saving Data).
+שמירת נתונים שומרת ב-LocalStorage.
+
+אנימציית פרחים מבצעת הרצה רציפה (Running).
+ניווט מקשר לכל חלקי האתר.
+
+ארכיטקטורה 3 שכבות מורכבת מ-UI Layer, Business Layer ו-Data Layer.</div>
+        </div>
+    </div>
+</body>
+</html>
