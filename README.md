@@ -30,16 +30,16 @@ This project serves as a comprehensive digital exhibition. It is designed to han
 ### Interface Preview
 | Desktop View | Mobile Experience |
 | :--- | :--- |
-| ![Preview 1](Architecture/Askarov/screenshots/preview1.png) | ![Preview 2](Architecture/Askarov/screenshots/preview2.png) |
+| ![Preview 1](Askarov/screenshots/preview1.png) | ![Preview 2](Askarov/screenshots/preview2.png) |
 
 ### Design Details
 | Feature Section | Branding & Layout |
 | :--- | :--- |
-| ![Preview 3](Architecture/Askarov/screenshots/preview3.png) | ![Preview 4](Architecture/Askarov/screenshots/preview4.png) |
+| ![Preview 3](Askarov/screenshots/preview3.png) | ![Preview 4](Askarov/screenshots/preview4.png) |
 
 ### Technical Architecture
 > **OPM-Diagram:** Detailed logic and structural flow of the architectural methodology.
-![OPM-Diagram](Architecture/Askarov/screenshots/OPM-Diagram.png)
+![OPM-Diagram](Askarov/screenshots/OPM-Diagram.png)
 
 ---
 
@@ -69,12 +69,12 @@ Architecture/
 
 | Role | Information |
 | :--- | :--- |
-| **Lead Developer/Designer** | [Oratias07](https://github.com/Oratias07) |
-| **LinkedIn** [@Oratias07](https://www.linkedin.com/in/oratias07) |
+| **Lead Developer/Designer GitHub** | [Oratias07](https://github.com/Oratias07) |
+| **LinkedIn** | [@Oratias07](https://www.linkedin.com/in/oratias07) |
 | **Project Name** | Askarov Architecture Showcase |
 | **Status** | Production Ready |
 
 <p align="center">
   <br />
-  <b>© 2024 Askarov Architecture. All rights reserved.</b>
+  <b>© 2024 Askarov Architecture. <br>All rights reserved.</b>
 </p>
