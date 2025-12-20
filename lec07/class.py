@@ -47,10 +47,8 @@ jack = CivilStudent("Leonard Jack", 25, 2022)
 #     print(f"name: {student.name}, age: {student.age}, country: {student.country}, department: {student.department}, startYear: {student.startYear}")
 
 
-
 for student in (kirk, spock, jack):
     print(student.dept())
-
 
 #print(kirk.description())
 #print(kirk.satisfaction('very satisfied'))
