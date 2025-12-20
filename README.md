@@ -1,38 +1,80 @@
 # Askarov Architecture Portfolio
 
-A sleek, modern architectural showcase website designed to highlight professional projects and design philosophy. This site features a clean aesthetic with high-quality imagery and responsive layouts.
 
-## 🌐 Live Demo
-**View the website here:** [https://zivaskarov.vercel.app/](https://zivaskarov.vercel.app/)
+# 🏛️ Architecture & Design Portfolio: Askarov
 
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Deployment: Vercel](https://img.shields.io/badge/Deployment-Vercel-black?logo=vercel)](https://zivaskarov.vercel.app/)
 
-## 📸 Screenshots & Project Showcase
+A high-end architectural showcase designed to bridge the gap between structural engineering and aesthetic design. This repository hosts the digital portfolio of **Ziv Askarov**, featuring clean UI/UX, responsive layouts, and technical diagrams.
 
-### Home Preview
-![Hero Section](Askarov\screenshots\preview1.png)
-![Hero Section](Askarov\screenshots\preview2.png)
-![Hero Section](Askarov\screenshots\preview3.png)
-![Hero Section](Askarov\screenshots\preview4.png)
-![Hero Section](Askarov\screenshots\preview5.png)
-
-### OPM-Diagram
-![Gallery Section](Askarov\screenshots\OPM-Diagram.png)
+## 🔗 Live Production URL
+**Explore the Live Site:** [https://zivaskarov.vercel.app/](https://zivaskarov.vercel.app/)
 
 ---
 
-## 🛠️ Built With
-* **HTML5** - Semantic structure
-* **CSS3** - Modern styling and animations
-* **JavaScript** - Interactive elements
-* **Vercel** - Fast and reliable hosting
+## 📖 Project Overview
 
-## 📁 Project Structure
-The source code for this specific project is located in the following directory:
-`Architecture/Askarov/`
+This project serves as a comprehensive digital exhibition. It is designed to handle high-resolution architectural renders while maintaining fast performance and a minimalist aesthetic that puts the focus on the work.
+
+### Key Features:
+* **Minimalist UI:** Focuses on negative space and typography to reflect architectural principles.
+* **Technical Documentation:** Includes high-level OPM (Object-Process Methodology) diagrams for structural clarity.
+* **Fully Responsive:** Optimized for desktop monitors, tablets, and mobile devices.
+* **Optimized Performance:** Fast asset loading hosted via Vercel’s Edge Network.
 
 ---
 
-## 👤 Author
-**Oratias07**
-* GitHub: [@Oratias07](https://github.com/Oratias07)
+## 📸 Visual Showcase
+
+### Interface Preview
+| Desktop View | Mobile Experience |
+| :--- | :--- |
+| ![Preview 1](Architecture/Askarov/screenshots/preview1.png) | ![Preview 2](Architecture/Askarov/screenshots/preview2.png) |
+
+### Design Details
+| Feature Section | Branding & Layout |
+| :--- | :--- |
+| ![Preview 3](Architecture/Askarov/screenshots/preview3.png) | ![Preview 4](Architecture/Askarov/screenshots/preview4.png) |
+
+### Technical Architecture
+> **OPM-Diagram:** Detailed logic and structural flow of the architectural methodology.
+![OPM-Diagram](Architecture/Askarov/screenshots/OPM-Diagram.png)
+
+---
+
+## 🛠️ Tech Stack & Methodology
+
+* **Frontend:** HTML5 (Semantic), CSS3 (Flexbox/Grid), JavaScript (ES6+).
+* **Design Tools:** Focused on clean, grid-based architectural layouts.
+* **Deployment:** Automated CI/CD via **Vercel** integration with GitHub.
+
+---
+
+## 📁 Repository Structure
+
+```text
+Architecture/
+└── Askarov/
+    ├── index.html          <-- Main entry point
+    ├── css/                <-- Stylesheets
+    ├── js/                 <-- Interactive logic
+    ├── screenshots/        <-- Portfolio previews
+    └── assets/             <-- Architectural renders & images
+```
+
+---
+
+## 👤 Contact & Development
+
+| Role | Information |
+| :--- | :--- |
+| **Lead Developer/Designer** | [Oratias07](https://github.com/Oratias07) |
+| **LinkedIn** [@Oratias07](https://www.linkedin.com/in/oratias07) |
+| **Project Name** | Askarov Architecture Showcase |
+| **Status** | Production Ready |
+
+<p align="center">
+  <br />
+  <b>© 2024 Askarov Architecture. All rights reserved.</b>
+</p>
