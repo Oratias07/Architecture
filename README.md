@@ -1,4 +1,4 @@
-# Askarov Architecture Portfolio
+# Architecture Portfolio
 
 
 # 🏛️ Architecture & Design Portfolio: Askarov
