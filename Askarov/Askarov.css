@@ -3,6 +3,39 @@ body {
     margin: 0;
     text-align: center;
     background: linear-gradient(#f2f7ff, #e6f3ff);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* אנימציית פרחים נופלים */
+#flowers-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.flower {
+    position: absolute;
+    top: -50px;
+    font-size: 20px;
+    animation: fall linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+/* הבטחה שהתוכן מעל הפרחים */
+nav, section, footer {
+    position: relative;
+    z-index: 2;
 }
 
 th, td {
@@ -20,10 +53,12 @@ nav {
 }
 
 .follow-label {
-    margin-right: 15px;
+    display: block;
+    margin: 30px 0 20px 0;
     font-weight: bold;
     color: #444;
-    font-size: 16px;
+    font-size: 18px;
+}
 
 .social-btn {
     padding: 10px 20px;
@@ -33,6 +68,7 @@ nav {
     background: #d6ecff;
     cursor: pointer;
     font-size: 16px;
+    transition: background 0.3s;
 }
 
 .social-btn:hover {
@@ -50,12 +86,6 @@ nav a {
 
 nav a:hover {
     background: #d6ecff;
-}
-
-.social-icons a {
-    margin-right: 15px;
-    font-size: 20px;
-    color: #d6ecff;
 }
 
 section {
@@ -78,6 +108,162 @@ section img, section video {
     border-radius: 18px;
 }
 
+/* עיצוב כפתורי הרחבה/כיווץ לשיטות טיפול */
+.treatment-item {
+    margin: 30px 0;
+    border: 2px solid #d6ecff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.treatment-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.treatment-toggle {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(135deg, #d6ecff 0%, #aed4ff 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: background 0.3s;
+}
+
+.treatment-toggle:hover {
+    background: linear-gradient(135deg, #aed4ff 0%, #85c7ff 100%);
+}
+
+.treatment-toggle h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.toggle-icon {
+    font-size: 20px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.toggle-icon.open {
+    transform: rotate(180deg);
+}
+
+.treatment-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    padding: 0 20px;
+    background: #f9fcff;
+}
+
+.treatment-content.open {
+    max-height: 500px;
+    padding: 25px 20px;
+}
+
+.treatment-content p {
+    text-align: right;
+    line-height: 1.8;
+    color: #555;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* עיצוב כפתור הרחבה/כיווץ לאודות */
+.about-toggle {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #d6ecff 0%, #aed4ff 100%);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.about-toggle:hover {
+    background: linear-gradient(135deg, #aed4ff 0%, #85c7ff 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.about-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-out;
+}
+
+.about-content.open {
+    max-height: 2000px;
+}
+
+.about-content table {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: right;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-content th {
+    padding: 20px;
+    font-size: 20px;
+    background: linear-gradient(135deg, #d6ecff 0%, #aed4ff 100%);
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #85c7ff;
+}
+
+.about-content td {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.about-content tr:last-child td {
+    border-bottom: none;
+}
+
+/* עיצוב סקשן "היכן אפשר למצוא אותי" */
+#where table {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+#where td {
+    text-align: center;
+    padding: 20px;
+}
+
+#where iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+/* טופס יצירת קשר */
 #contact form {
     width: 35%;
     margin: auto;
@@ -90,6 +276,14 @@ section img, section video {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
 }
 
 button {
@@ -100,6 +294,7 @@ button {
     font-size: 17px;
     background: #aed4ff;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 button:hover {
@@ -110,4 +305,99 @@ footer {
     margin-top: 40px;
     padding: 25px;
     background: #cfe6ff;
+}
+
+/* עיצוב להודעות תוצאה */
+#formResult {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: right;
+}
+
+/* Responsive design - התאמה למסכי טלפון */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 30px 20px;
+    }
+    
+    #contact form {
+        width: 100%;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    nav a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+    
+    section h2 {
+        font-size: 28px;
+    }
+    
+    .treatment-toggle h3 {
+        font-size: 20px;
+    }
+    
+    .treatment-content p {
+        font-size: 14px;
+    }
+    
+    /* התאמת הטבלה למסך קטן */
+    .about-content table {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .about-content th {
+        font-size: 16px;
+        padding: 12px 8px;
+    }
+    
+    .about-content td {
+        font-size: 13px;
+        padding: 12px 8px;
+        line-height: 1.6;
+    }
+    
+    .about-toggle {
+        width: 95%;
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    section img, section video {
+        width: 90%;
+    }
+    
+    .social-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* התאמה למסכים ממש קטנים */
+@media (max-width: 480px) {
+    section {
+        padding: 20px 15px;
+    }
+    
+    .about-content th,
+    .about-content td {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+    
+    .treatment-toggle {
+        padding: 15px 10px;
+    }
+    
+    .treatment-toggle h3 {
+        font-size: 18px;
+    }
 }

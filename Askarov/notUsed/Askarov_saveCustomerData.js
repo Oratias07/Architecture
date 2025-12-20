@@ -22,7 +22,7 @@ function verifyInput() {
         alertMsg = alertMsg + "\nPlease enter a right email.";
     }
 	if(alertMsg != '') {
-		alert (alertMsg);
+		alert(alertMsg);
 	}
 	else {
 		var fullname = name + " " + lastname;

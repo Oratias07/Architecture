@@ -1,5 +1,3 @@
-// script.js
-
 // Smooth scrolling for nav links
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {
@@ -17,26 +15,8 @@ function submitForm() {
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    if (!firstName || !lastName) {
-        alert('אנא מלא שם פרטי ושם משפחה');
-        return;
-    }
-
-    if (!/^\d{10}$/.test(phone)) {
-        alert('אנא הזן מספר טלפון חוקי בן 10 ספרות');
-        return;
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        alert('אנא הזן כתובת אימייל חוקית');
-        return;
-    }
-
-    if (!message) {
-        alert('אנא הזן את תוכן ההודעה שלך');
-        return;
-    }
-
+    verifyInput();
     alert('ההודעה נשלחה בהצלחה!');
-    document.querySelector('#contact form').reset();
+    // document.querySelector('#contact form').reset();
+    clearForm();
 }
