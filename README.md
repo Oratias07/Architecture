@@ -10,14 +10,14 @@ A sleek, modern architectural showcase website designed to highlight professiona
 ## 📸 Screenshots & Project Showcase
 
 ### Home Preview
-![Hero Section](screenshots\preview1.png)
-![Hero Section](screenshots\preview2.png)
-![Hero Section](screenshots\preview3.png)
-![Hero Section](screenshots\preview4.png)
-![Hero Section](screenshots\preview5.png)
+![Hero Section](Askarov\screenshots\preview1.png)
+![Hero Section](Askarov\screenshots\preview2.png)
+![Hero Section](Askarov\screenshots\preview3.png)
+![Hero Section](Askarov\screenshots\preview4.png)
+![Hero Section](Askarov\vscreenshots\preview5.png)
 
 ### OPM-Diagram
-![Gallery Section](screenshots\OPM-Diagram.png)
+![Gallery Section](Askarov\screenshots\OPM-Diagram.png)
 
 ---
 
