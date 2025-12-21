@@ -76,5 +76,5 @@ Architecture/
 
 <p align="center">
   <br />
-  <b>© 2024 Askarov Architecture. <br>All rights reserved.</b>
+  <b>© 2025 Askarov Architecture. <br>All rights reserved.</b>
 </p>
