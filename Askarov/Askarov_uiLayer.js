@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // פונקציה ליצירת אנימציית פרחים נופלים
 function initFallingFlowers() {
     const flowersContainer = document.getElementById('flowers-container');
-    const flowerEmojis = ['🌸', '🌺', '🌼', '🌻', '🌷', '🏵️', '💮', '🥀'];
+    const flowerEmojis = ['🌸', '🌺', '🌼', '🌻', '🌷', '🏵️', '🥀'];
     const numberOfFlowers = 200; // כמות הפרחים שיהיו על המסך
     
     function createFlower() {
