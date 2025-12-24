@@ -400,4 +400,47 @@ footer {
     .treatment-toggle h3 {
         font-size: 18px;
     }
+
+
+}
+/* mainPics.jpg (בתוך שיטות טיפול) */
+#treatments > img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* preVid.mp4 */
+#treatments video {
+    width: 45%;
+    border-radius: 18px;
+}
+
+/* reviews_new.jpg */
+#success img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* ZivPer.jpg */
+#about > img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Spotify iframe (זה שהיה לו border-radius inline) */
+iframe[data-testid="embed-iframe"] {
+    border-radius: 12px;
+}
+
+/* תיבת תוצאה של הטופס (היו לה padding/radius/display inline) */
+#formResult {
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
 }
