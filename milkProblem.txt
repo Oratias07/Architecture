@@ -1,0 +1,10 @@
+Thread A:              	Thread B:
+
+while( TRUE ) {          while( TRUE ) {
+  < non-critical >         < non-critical >
+  while( turn == B );      while( turn == A );
+  < criticalA >             < criticalB >
+  turn = B;                turn = A;
+  ...                      ...
+}                        } 
+...                      ...
